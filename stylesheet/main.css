@@ -1,0 +1,73 @@
+body {
+    background-color: #c7d2e4;
+}
+
+h1 {
+    font-family: "Clarity City", sans-serif;
+    font-size: 40pt;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+/* unique divs */
+.title-screen {
+    padding: 4rem;
+    height: 90.7vh;
+    width: 100vw;
+    background-image: url(/resources/hero-screen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title-screen-container {
+    height: 80%; 
+    width: 90%; 
+    position: relative; 
+    right: 3rem;
+}
+
+/* reusable classes */
+.double-column {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.container {
+    margin: 0.5rem;
+    padding: 2rem;
+}
+
+.container-fill {
+    margin: 0.5rem;
+    padding: 2rem;
+    background-color: white;
+    border: 0.1rem solid #353636;
+    border-radius: 1rem;
+}
+
+.white-text {
+    color: white;
+}
+
+/* alignment */
+.halign-left {
+    text-align: left;
+}
+
+.halign-right {
+    text-align: right;
+}
+
+.halign-center {
+    display: flex;
+    align-items: center;
+}
+
+.valign-middle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
