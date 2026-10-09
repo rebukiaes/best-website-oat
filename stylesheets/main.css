@@ -1,0 +1,76 @@
+h1 {
+    font-family: "Clarity City", sans-serif;
+    font-size: 40pt;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+p, h2 {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+.title-screen {
+    padding: 4rem;
+    height: 90.7vh;
+    width: 100vw;
+    background-image: 
+        radial-gradient(circle, transparent 50%, rgba(0, 0, 0, 0.8) 130%),
+        url(/resources/hero-screen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title-screen-container {
+    height: 80%; 
+    width: 90%; 
+    position: relative; 
+    right: 3rem;
+}
+
+.titleheader {
+    place-self: center;
+    height: fit-content;
+    width: 40rem;
+    position: relative;
+    bottom: 3.5rem;
+}
+
+.otherthings {
+    position: relative; 
+    bottom: 3.5rem;
+}
+
+/* ------------------ */
+/* consistent styling */
+/* ------------------ */
+nav {
+    background: linear-gradient(to bottom right, #ffffff, #c9c9c9);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.white-text {
+    background: linear-gradient(to bottom right, #ffffff, #c9c9c9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+h1, h2, p {
+    background: linear-gradient(to bottom right, #000000, #1c1c1c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}

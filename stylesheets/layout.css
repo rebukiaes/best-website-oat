@@ -1,0 +1,87 @@
+/* ---------------- */
+/* reusable classes */
+/* ---------------- */
+.double-column {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.space-evenly > div {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.container, .container-fill {
+    margin: 0.5rem;
+    padding: 2rem; 
+    gap: 1.5rem;
+}
+
+.container-fill {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fit-width {
+    width: 75vw;
+}
+
+.round {
+    border-radius: 1rem;
+}
+
+.outline {
+    border: 0.05rem solid #898989;
+}
+
+.scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: #646464 transparent;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.center {
+    place-self: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.shrink {
+    transform: scale(0.8);
+}
+
+/* --------- */
+/* alignment */
+/* --------- */
+.textalign-left {
+    text-align: left;
+}
+
+.textalign-right {
+    text-align: right;
+}
+
+.textalign-center {
+    text-align: center;
+}
+
+.halign-middle-center, .halign-middle-space {
+    display: flex;
+    align-items: center;
+}
+
+.valign-middle-center, .valign-middle-space {
+    display: flex;
+    flex-direction: column;
+}
+
+.valign-middle-center, .halign-middle-center {
+    justify-content: center;
+}
+
+.valign-middle-space, .halign-middle-space {
+    justify-content: space-between;
+}

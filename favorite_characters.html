@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/stylesheets/layout.css" />
+    <link rel="stylesheet" href="stylesheets/kenward.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Kenward and George</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kenward's Stuff
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/phighting.html">Phighting Regions</a></li>
+                <li><a class="dropdown-item" href="/favorite_characters.html">Top Five Favorite Characters</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                George's Stuff
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="double-column container">
+      <div class="center">
+        <h1>TOP FIVE OF MY FAVORITE VIDEO GAME CHARACTERS</h1>
+        <p>by yours truly Kenward</p>
+      </div>
+      <img src="/resources/rainworld.jpg" class="round" />
+    </div>
+
+    <div class="center">
+      <div class="double-column container-fill fit-width space-evenly">
+        <div class="center">
+          <h2><b>1. Niko</b></h2>
+          <p>
+            They are a child tasked with returning the sun to the Tower and
+            saving the World from dying out. Niko contacts the Player throughout
+            most of the game when in need of help or simply conversation about
+            Niko's and the Player's origins.
+          </p>
+        </div>
+        <div id="carousel-1" class="carousel slide center">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-1"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-1"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-1"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="resources/niko1.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="resources/niko2.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/resources/niko3.png"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="double-column container-fill fit-width space-evenly">
+        <div class="center">
+          <h2><b>2. Biograft</b></h2>
+          <p>
+            Biograft is a melee Phighter that specializes in pressuring targets
+            and chasing them down. Biograft plays like a glass cannon, dealing
+            high damage while sporting the lowest health in the roster. Their
+            passive, Power of Biograft / Heat, increases its attack speed when
+            using Dual Swing while also limiting their aggressiveness. As
+            Biograft fills its heat meter, it could lead to it being left
+            vulnerable if the bar fills up completely. Echo Execution allows
+            Biograft to confirm kills on enemies at 25% health. Biograft's
+            abilities allows it to get in and out of fights swiftly, allowing
+            for more methodical gameplay.
+          </p>
+        </div>
+        <div id="carousel-2" class="carousel slide center">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="resources/Render_Biograft.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="resources/biograft2.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/resources/biograft3.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="double-column container-fill fit-width space-evenly">
+        <div>
+          <h2><b>3. Artificer</b></h2>
+          <p>
+            A fierce combatant, master of pyrotechnics and explosives. Keen to
+            move up in the foodchain, your journey will surely be one lined with
+            constant bloodshed and warfare. The Artificer is one of five
+            playable Slugcats in the More Slugcats Expansion. They are agile and
+            strong, capable of producing explosions to propel themself through
+            the air and able to craft explosives using certain objects.
+            Artificer is unlocked as a playable character after completing the
+            campaign of either Monk or Survivor.
+          </p>
+        </div>
+        <div id="carousel-3" class="carousel slide center">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="resources/artificer1.webp"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="resources/artificer2.webp"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/resources/artificer3.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-3"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-3"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="double-column container-fill fit-width space-evenly">
+        <div>
+          <h2><b>4. Momo</b></h2>
+          <p>
+            Momo is a Black Cat character that has appeared in several Google
+            Doodles, Momo is based on a real cat (born April 15, 2010) who was
+            owned by former Doodler Juliana Chen and now lives with her relative
+            Sidney.
+            <br /><br />
+            Momo made her debut in the Halloween 2015 doodle. Appearing as a
+            normal, non-anthropomorphic cat owned by the Yellow Witch (to show
+            that she is obsessed with cats). Momo later starred in her own game
+            in the Halloween 2016 doodle. She is a freshman student at a
+            wizarding school with several other animals including a Frog, a Dog,
+            an Owl, and an anthropomorphic Pumpkin. In the game, Momo defeats
+            the ghosts by the player drawing symbols with her wand that appear
+            above the ghosts' head.
+          </p>
+        </div>
+        <div id="carousel-4" class="carousel slide center">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-4"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-4"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-4"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="resources/momo1.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="resources/momo2.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/resources/momo3.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-4"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-4"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="double-column container-fill fit-width space-evenly">
+        <div>
+          <h2><b>5. Nashatra Bealdhild</b></h2>
+          <p>
+            Born in the Shire of Reverdot in New Dievodora, Nashatra lived a
+            relatively quiet life in her hometown until the age of 20, when she
+            was informed she was a sleepwalker presumably by the Rose Seekers.
+            She then had to undergo training by the Rose Seekers to befit
+            herself for the task, presumably meeting Adelaide along the way,
+            showing Nash the ropes of the dreams in the Dreamsphere(?). Not much
+            is known about the prologue of this game other than small pieces
+            scattered throughout the various Dreamsphere games.
+            <br /><br />
+          </p>
+        </div>
+        <div id="carousel-5" class="carousel slide center">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-5"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-5"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-5"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="resources/nash1.png"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="resources/nash2.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/resources/nash3.jpg"
+                class="d-block w-100 carousel-image round"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-5"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-5"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
