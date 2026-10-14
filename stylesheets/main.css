@@ -51,6 +51,21 @@ h2 {
     bottom: 3.5rem;
 }
 
+.profile-img {
+    width: 100%;
+    max-width: 20rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+
+    border-radius: 2rem;
+}
+
+.cards > a > div {
+    width: auto;
+    height: 15rem;
+}
+
 /* ------------------ */
 /* consistent styling */
 /* ------------------ */
@@ -59,18 +74,18 @@ nav {
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.white-text {
-    background: linear-gradient(to bottom right, #ffffff, #c9c9c9);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-
 h1, h2, p {
     background: linear-gradient(to bottom right, #000000, #1c1c1c);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 15rem;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;  
 }

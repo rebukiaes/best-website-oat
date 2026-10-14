@@ -1,12 +1,24 @@
 /* ---------------- */
 /* reusable classes */
 /* ---------------- */
+.white-text {
+    background: linear-gradient(to bottom right, #ffffff, #c9c9c9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.text-outline {
+    -webkit-text-stroke: 0.005em black; 
+}
+
 .double-column {
     display: flex;
     gap: 0.5rem;
 }
 
-.space-evenly > div {
+.space-evenly * {
     flex: 1 1 0;
     min-width: 0;
 }
@@ -15,6 +27,15 @@
     margin: 0.5rem;
     padding: 2rem; 
     gap: 1.5rem;
+}
+
+.less-spacing {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.no-gap {
+    gap: 0;
 }
 
 .container-fill {
@@ -51,6 +72,15 @@
 
 .shrink {
     transform: scale(0.8);
+}
+
+.button-link > a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.smaller-h1 h1 {
+    font-size: 30pt;
 }
 
 /* --------- */

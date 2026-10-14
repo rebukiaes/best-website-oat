@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/stylesheets/layout.css" />
+    <link rel="stylesheet" href="stylesheets/kenward.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Kenward and George</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/about_us.html"
+                >About Us</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kenward's Stuff
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/phighting.html"
+                    >Phighting Regions</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/favorite_characters.html"
+                    >Top Five Favorite Characters</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/favorite_games.html"
+                    >Top Five Favorite Games</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/brickbattle.html"
+                    >Brickbattle</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                George's Stuff
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-screen brickbattle-bg valign-middle-center">
+      <img src="/resources/robloxlogo.png" />
+      <h1 class="white-text text-outline textalign-center">
+        Welcome to Brickbattle!
+      </h1>
+      <p class="white-text text-outline">Active since 2006</p>
+    </div>
+
+    <div
+      class="container round outline center valign-middle-center no-gap"
+      role="tablist"
+    >
+      <h2 class="center textalign-center">
+        Click on the tools to learn more about them!
+      </h2>
+      <div
+        class="container halign-middle-center icon-image icon-button less-spacing"
+      >
+        <button
+          class="nav-link active"
+          id="sword"
+          data-bs-toggle="tab"
+          data-bs-target="#sword-pane"
+          type="button"
+          role="tab"
+          aria-controls="sword-pane"
+          aria-selected="true"
+        >
+          <img src="/resources/Sword.webp" />
+        </button>
+        <button
+          class="nav-link"
+          id="slingshot"
+          data-bs-toggle="tab"
+          data-bs-target="#slingshot-pane"
+          type="button"
+          role="tab"
+          aria-controls="slingshot-pane"
+          aria-selected="false"
+        >
+          <img src="/resources/Slingshot.webp" />
+        </button>
+        <button
+          class="nav-link"
+          id="rocket"
+          data-bs-toggle="tab"
+          data-bs-target="#rocket-pane"
+          type="button"
+          role="tab"
+          aria-controls="rocket-pane"
+          aria-selected="false"
+        >
+          <img src="/resources/Rocket.webp" />
+        </button>
+        <button
+          class="nav-link"
+          id="trowel"
+          data-bs-toggle="tab"
+          data-bs-target="#trowel-pane"
+          type="button"
+          role="tab"
+          aria-controls="trowel-pane"
+          aria-selected="false"
+        >
+          <img src="/resources/Trowel.webp" />
+        </button>
+        <button
+          class="nav-link"
+          id="bomb"
+          data-bs-toggle="tab"
+          data-bs-target="#bomb-pane"
+          type="button"
+          role="tab"
+          aria-controls="bomb-pane"
+          aria-selected="false"
+        >
+          <img src="/resources/Bomb.webp" />
+        </button>
+        <button
+          class="nav-link"
+          id="superball"
+          data-bs-toggle="tab"
+          data-bs-target="#superball-pane"
+          type="button"
+          role="tab"
+          aria-controls="superball-pane"
+          aria-selected="false"
+        >
+          <img src="/resources/Superball.webp" />
+        </button>
+        <button
+          class="nav-link"
+          id="paintball"
+          data-bs-toggle="tab"
+          data-bs-target="#paintball-pane"
+          type="button"
+          role="tab"
+          aria-controls="paintball-pane"
+          aria-selected="false"
+        >
+          <img src="/resources/Paintball.webp" />
+        </button>
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <div
+        class="text-and-image tab-pane show fade active"
+        id="sword-pane"
+        role="tabpanel"
+        aria-labelledby="sword"
+      >
+        <div>
+          <h2><b>Sword</b></h2>
+          <p>
+            The Sword is one of the most iconic Roblox tools. When clicked
+            twice, you can perform a lunge, which has extremely high damage and
+            another use. Despite seeming extremely useful for combat, it can
+            easily be countered by rockets, so keep note of your opponents
+            rocket cooldown when ambushing someone with a sword. The Sword
+            grants a little bit of height when lunging in the air, granting you
+            a small "double jump." Due to the Sword being able to instantly kill
+            a player if you swing it around, it is one of the best tools for an
+            ambush (especially from the air), or countering other feisty
+            players.
+          </p>
+        </div>
+        <img src="/resources/Sword.webp" />
+      </div>
+
+      <div
+        class="text-and-image tab-pane fade"
+        id="slingshot-pane"
+        role="tabpanel"
+        aria-labelledby="slingshot"
+      >
+        <div>
+          <h2><b>Slingshot</b></h2>
+          <p>
+            The Slingshot has the ability to shoot gravity-affected pellets once
+            activated. If a pellet bounces off of a part that isn't a player,
+            its damage will be fully reduced. While the Slingshot's damage seems
+            minor at first, add it up with the ability to hold it and no need to
+            aim upwards (the Slingshot automatically shoots pellets to the mouse
+            position if not too far), and you have a very decent close to mid
+            range weapon.
+          </p>
+        </div>
+        <img src="/resources/Slingshot.webp" />
+      </div>
+
+      <div
+        class="text-and-image tab-pane fade"
+        id="rocket-pane"
+        role="tabpanel"
+        aria-labelledby="rocket"
+      >
+        <div>
+          <h2><b>Rocket</b></h2>
+          <p>
+            The Rocket Launcher is used mainly for close-combat and
+            un-defendable destruction. Rockets are shot at a speed of 70 studs
+            per second with gravity unaffected, and creates an explosion on
+            impact. It can easily be countered by setting a wall infront of
+            yourself using the trowel, but you can counter any opponent doing
+            this by shooting a rocket upwards when a jump from them is
+            suspected.
+          </p>
+        </div>
+        <img src="/resources/Rocket.webp" />
+      </div>
+
+      <div
+        class="text-and-image tab-pane fade"
+        id="trowel-pane"
+        role="tabpanel"
+        aria-labelledby="trowel"
+      >
+        <div>
+          <h2><b>Trowel</b></h2>
+          <p>
+            The Trowel, when used, will summon a wall of bricks in the size of
+            4x1x3 studs. The wall is 3 bricks high and 4 bricks wide, but takes
+            a while before it is fully built. Walls created from the trowel weld
+            to the parts below them, attaching themselves to that part. Walls
+            can be placed at any distance and on any surface or wall. Walls can
+            also be used to block projectiles. This can be very useful against
+            someone with their rocket still reloading, and even if the wall is
+            destroyed, the trowel has a faster cooldown than the rocket does,
+            allowing the player to constantly place trowels to block projectiles
+            such as paintballs and usually superballs.
+          </p>
+        </div>
+        <img src="/resources/Trowel.webp" />
+      </div>
+
+      <div
+        class="text-and-image tab-pane fade"
+        id="bomb-pane"
+        role="tabpanel"
+        aria-labelledby="bomb"
+      >
+        <div>
+          <h2><b>Bomb</b></h2>
+          <p>
+            The Bomb (aka Timebomb) can be effectively used to both destroy
+            parts and eliminate other players. When the Bomb Tool is activated,
+            a Bomb will be placed down and explode in approximately 3.8 seconds.
+            The explosion created by the Bomb is very large and strong. You can
+            also use it in combat using the Superball or Rocket to send it
+            flying forward to kill enemies and destroy terrain or trowel walls.
+            To counter other players knocking your bombs via projectiles, use a
+            Trowel to block the opponents Superball from flinging it away.
+          </p>
+        </div>
+        <img src="/resources/Bomb.webp" />
+      </div>
+
+      <div
+        class="text-and-image tab-pane fade"
+        id="superball-pane"
+        role="tabpanel"
+        aria-labelledby="superball"
+      >
+        <div>
+          <h2><b>Superball</b></h2>
+          <p>
+            The Superball is a long-ranged tool that shoots large balls that
+            deal large amounts of damage to other players on contact. When
+            impacted with another part, the superballs damage is halved (55 to
+            27.5 to 13.75 and so on) and it bounces at nearly the same speed as
+            it was when impacting. Superballs are as fast as paintballs, but do
+            not have semi anti-gravity, disabling the ability to travel as far
+            as paintballs can, but the large damage and size can make up for it.
+          </p>
+        </div>
+        <img src="/resources/Superball.webp" />
+      </div>
+
+      <div
+        class="text-and-image tab-pane fade"
+        id="paintball-pane"
+        role="tabpanel"
+        aria-labelledby="paintball"
+      >
+        <div>
+          <h2><b>Paintball</b></h2>
+          <p>
+            The Paintball Gun is a long-ranged tool that shoots paintballs at
+            high speeds that have semi anti-gravity and deal damage when they
+            impact a player. It paints all parts that the projectile touches
+            with a random BrickColor (unless a theme is equipped) other than
+            some special parts. The distance a paintball can travel can exceed
+            even 300 studs, which makes it the closest thing to a sniper.
+          </p>
+        </div>
+        <img src="/resources/Paintball.webp" />
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
