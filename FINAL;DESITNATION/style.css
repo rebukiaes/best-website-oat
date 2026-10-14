@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Stencilia';
+  src: url('Stencilia-A.ttf') format('truetype');
+}
+
+.fd {
+  background: url("FINALDESTINATION.gif") center / cover no-repeat fixed;
+  color: #000;
+  font-family: 'Stencilia', 'Courier New', monospace;
+}
+
+.fd .marquee {
+  overflow: hidden;
+  padding: 0.5rem 0;
+}
+
+.fd .track {
+  display: flex;
+  width: max-content;
+  font-size: 1.2rem;
+  animation: scroll 20s linear infinite;
+}
+
+.fd .item {
+  white-space: nowrap;
+  padding-right: 2rem;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.fd .panel {
+  max-width: 1100px;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  background: rgba(255, 179, 230, 0.5);
+  border: 3px solid #000;
+}
+
+.fd .box {
+  background: #ffb3e6;
+  border: 3px solid #000;
+  padding: 0.75rem;
+}
+
+.fd .box h2,
+.fd .box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.fd .box p {
+  margin-bottom: 0;
+}
+
+.fd .box-big {
+  background: #ffb3e6;
+  border: 3px solid #000;
+  padding: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.fd .box-big h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.fd .box-big p {
+  margin-bottom: 0;
+}
+
+.fd .header {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.fd .line {
+  border: 0;
+  border-top: 3px solid grey;
+  opacity: 1;
+  margin: 0.75rem 0;
+}
+
+.fd .scroll {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.fd .notebook-paper {
+  transition: transform 0.3s ease;
+}
+
+.fd .notebook-paper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fd .note1 {
+  transform: rotate(-3deg);
+}
+
+.fd .note2 {
+  transform: rotate(3deg);
+}
+
+.fd .note3 {
+  transform: rotate(2deg);
+}
+
+.fd .text {
+  font-size: 0.85rem;
+}
+
+.fd .heart {
+  position: fixed;
+  z-index: 10;
+  font-size: 3rem;
+  color: #ff00ff;
+  pointer-events: none;
+}
+
+.fd img.heart {
+  width: 200px;
+}
+
+.fd .heart1 {
+  top: 12%;
+  left: 3%;
+}
+
+.fd .heart2 {
+  top: 60%;
+  left: 6%;
+}
+
+.fd .heart3 {
+  top: 25%;
+  right: 4%;
+}
+
+.fd .heart4 {
+  top: 75%;
+  right: 7%;
+}
+
+@media (max-width: 992px) {
+  .fd .heart {
+    display: none;
+  }
+}
+
+.fd .jump-row {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.fd .jump-btn {
+  display: inline-block;
+  background: #fff0fa;
+  border: 3px solid #000;
+  color: #000;
+  font-family: 'Stencilia', 'Courier New', monospace;
+  font-size: 0.95rem;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fd .jump-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  color: #000;
+}
+
+.fd .typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
